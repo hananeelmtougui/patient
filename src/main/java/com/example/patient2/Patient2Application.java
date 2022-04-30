@@ -80,7 +80,7 @@ public class Patient2Application {
     //@Bean
     CommandLineRunner commandLineRunner(ConsultationRepository consultationRepository){
         return args -> {
-           consultationRepository.save(new Consultation(null,"Mohammed",new Date()));
+           consultationRepository.save(new Consultation(null,"amine",new Date()));
 
            consultationRepository.findAll().forEach(p->{
                System.out.println(p.getNom());
